@@ -1,0 +1,28 @@
+<h3>New Task</h3>
+
+
+<%= form_for :task, url: tasks_path do |f| %>
+  
+  <p>
+      <%= f.label :date %>
+      <%= f.text_field :date %>
+  </p>
+  
+  <p>
+      <%= f.label :item %>
+      <%= f.text_field :item %>
+  </p>
+  
+  <p>
+      <%= f.label :status %>
+      <%= f.text_field :status %>
+  </p>
+ 
+  
+  <br>
+  <p>
+      <%= f.submit %>
+  </p>
+<% end %>
+  
+<%= link_to 'back', tasks_path %>
